@@ -1,0 +1,37 @@
+body{
+background-image: url('../assets/img/backsito.png');
+    background-position: top center;
+    background-attachment: fixed;
+
+}
+@keyframes bounce-background {
+    from {
+        background-position: 0 0px;
+    }
+
+    to {
+        background-position: 0 960px;
+    }
+}
+body {
+    animation-name: bounce-background;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.diapositivas{
+        max-width: 60%; /* ajusta el ancho máximo */
+        max-height: 30%; /* ajusta la altura máxima */
+        margin: 0 auto; /* centra el carrusel horizontalmente */
+}
+
+.titulo{
+    margin-top: 7%;
+}
+
+
+ul li{
+    list-style: none;
+}
+

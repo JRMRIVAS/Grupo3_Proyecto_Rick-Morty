@@ -3,6 +3,12 @@ function App() {
 
   return (
     <>
+    <div className="fondo">
+        <div>
+          <Home />
+          <Footer />
+        </div>
+    </div>
     </>
   )
 }
