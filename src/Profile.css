@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Roboto:wght@100;300&display=swap');
+
+body{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(69,30,87,1) 100%);
+}
+
+#profile{
+    width: 100vw;
+    height: auto;
+}
+
+.card{
+    width: 35vw;
+    height: 60vh;
+}
+
+.userInfo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.userImage{
+    width: 15vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.btn-danger{
+    background-color: rgba(69,30,87,1);
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
