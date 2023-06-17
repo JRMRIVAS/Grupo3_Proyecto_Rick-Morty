@@ -1,14 +1,12 @@
+import Header from './components/Header'
+import Home from './components/Home'
+import Footer from './components/Footer'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className="fondo">
-        <div>
-          <Home />
-          <Footer />
-        </div>
-    </div>
+    <Header />
+    <Footer />
     </>
   )
 }

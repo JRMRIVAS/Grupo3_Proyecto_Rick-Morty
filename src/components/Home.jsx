@@ -2,7 +2,7 @@ import React from 'react'
 import op1 from '../assets/img/op1.jpg'
 import op2 from '../assets/img/op2.jpg'
 import op3 from '../assets/img/op3.jpg'
-import music from '../assets/audio/music.mp3'
+import imgBuscador from '../assets/img/imgBuscador.png'
 import ControlAudio from './ControlAudio'
 
 
@@ -34,14 +34,16 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className=' text-center text-light px-4 '>
+            <div className=' text-center text-white px-4 '>
                 <h1 className='titulo '>NOTICIAS</h1>
                 <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quis? Iste assumenda doloribus rerum architecto ex quod error voluptatum voluptate quis, cum deserunt quaerat, quae dolores sapiente et expedita vel!</p>
+            </div>
+            <div className='align-item-center '>
+                <img src={imgBuscador} className='cara' alt="imgBuscador" />
             </div>
         </main>
         
         </>
     )
 }
-
 
