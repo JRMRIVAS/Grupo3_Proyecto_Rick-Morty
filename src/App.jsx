@@ -1,10 +1,18 @@
-function App() {
-  const [count, setCount] = useState(0)
+import Header from './components/Header'
+import './assets/css/style.css'
 
-  return (
-    <>
-    </>
-  )
+
+
+function App() {
+
+    return (
+      <>
+        <Header />
+       
+        
+       
+      </>
+    )
 }
 
 export default App
