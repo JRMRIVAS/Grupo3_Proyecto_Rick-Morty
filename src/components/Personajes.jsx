@@ -1,14 +1,43 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import Pagination from './Pagination'
+import Filtros from './Filtros'
+import craneo from '../assets/img/craneo.png'
+import amor from '../assets/img/amor.png'
+import pregunta from '../assets/img/pregunta.png'
+import aright from '../assets/img/aright.png'
+import aleft from '../assets/img/aleft.png'
 
+function NavPage({ page, setPage }) {
+  return (
+    <div className="d-flex justify-content-center gap-4 my-5">
+      {page > 0 && (
+          <button
+              className="btn btn-primary btn-sm"
+              onClick={() => setPage(page - 1)}>
+              <img src={aleft} className="img-fluid arow" alt="aleft"/> 
+              PAGINA: {page}
+          </button>
+      )}
 
+      {page < 42 && (
+          <button
+              className="btn btn-primary btn-sm"
+              onClick={() => setPage(page + 1)}>
+              PAGINA: {page + 1}
+              <img src={aright} className="img-fluid arow" alt="aright"/> 
+          </button>
+      )}
+      
+    </div>
+  );
+}
 
 export default function Personajes() {
   const [character, setCharacters] = useState([]);
   const [info, setInfo] = useState({});
-  const url = "https://rickandmortyapi.com/api/character";
-
+  const [page, setPage] = useState(1);
+  const url =  `https://rickandmortyapi.com/api/character?page=${page}`
+  
   const obtenerCharacters = (url) => {
     axios
       .get(url)
@@ -21,41 +50,16 @@ export default function Personajes() {
       });
   };
 
-  const handleNextPage = () => {
-    obtenerCharacters(info.next);
-    window.scrollTo(0, 0);
-  };
-
-  const handlePreviousPage = () => {
-    obtenerCharacters(info.prev);
-    window.scrollTo(0, 0);
-  };
-
   useEffect(() => {
     obtenerCharacters(url);
-  }, []);
-
+  }, [page]);
+ 
     //console.log(character)
     return (
       <div className='container'>    
           <h1>Rick y Morty Api</h1> 
-          <div>
-              <nav>
-                <ul className="pagination justify-content-center">
-                  {info.prev ? (
-                    <li className="page-item">
-                      <button className="btn btn-primary text-white" onClick={handlePreviousPage}>Previous</button>
-                    </li>
-                  ) : null}
-                  {info.next ? (
-                    <li className="page-item">
-                      <button className="btn btn-primary text-white" onClick={handleNextPage}>Next</button>
-                    </li>
-                  ) : null}
-                </ul>
-              </nav>
-            </div>
-
+           
+                            
             <div className='row my-5'>
                 {
                   character.map((item, indice) => {
@@ -66,37 +70,42 @@ export default function Personajes() {
                           <div className="card">
                                 <img src={item.image} className="img-fluid" alt="character"/>    
                                                     
-                              <div className="detaill  balanced">
+                              <div className="detaill">
                                     <h5>{item.name}</h5> 
-                                    <p>Estado: {item.status}</p>                             
+                                    <p>Estado: {item.status}</p> 
                                     <p>Especie: {item.species}</p>                        
                                     <p>Género: {item.gender}</p>
                                     <p>origen: {item.origin.name}</p>
                                     <p>Ubicación: {item.location.name}</p>                                                                            
                                 </div>
-                          </div>                                 
+                          </div>   
+                        
+                          {(() => {
+                                if (item.status === "Dead") {
+                                  return <div className="estatus">
+                                            <img src={craneo} alt="api_rick_and_morty" className='img-fluid' />
+                                         </div>;
+                                  } else if (item.status === "Alive") {
+                                  return <div className=" estatus">
+                                            <img src={amor} alt="api_rick_and_morty" className='img-fluid' />
+                                        </div>;
+                                } else if (item.status === "unknown"){
+                                  return <div className="estatus">
+                                           <img src={pregunta} alt="api_rick_and_morty" className='img-fluid' />
+                                         </div>;
+                                }
+                              })()}
+                                                   
                       </div>    
                   )  
                   }) 
                 }
               </div>
 
-          <div>
-              <nav>
-                <ul className="pagination justify-content-center">
-                  {info.prev ? (
-                    <li className="page-item">
-                      <button className="btn btn-primary text-white" onClick={handlePreviousPage}>Previous</button>
-                    </li>
-                  ) : null}
-                  {info.next ? (
-                    <li className="page-item">
-                      <button className="btn btn-primary text-white" onClick={handleNextPage}>Next</button>
-                    </li>
-                  ) : null}
-                </ul>
-              </nav>
-            </div>
+              <NavPage page={page} setPage={setPage} />
+             
+              
+
       </div>
     )
 
