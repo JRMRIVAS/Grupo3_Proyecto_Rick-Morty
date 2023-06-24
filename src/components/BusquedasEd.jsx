@@ -94,8 +94,8 @@ export default function BusquedasEd() {
                                 personajes.map((personaje, indice) => {
                                     return(
                                         <div className=' col-lg-4 col-md-6 col-xs-12 personaje'>
-                                            <div className='margen0'>
-                                                <h2 className='text-center blanco texto'> {personaje.name}</h2>
+                                            <div className='margen0 text-center'>
+                                                <h2 className=' blanco texto'> {personaje.name}</h2>
                                                 <p className='hover '>Estado : {personaje.status} </p>
                                                 <p className=' hover '>Especie : {personaje.species}</p>
                                                 <img className='imgbusqueda marl' src={personaje.image} alt={personaje.name}/>
