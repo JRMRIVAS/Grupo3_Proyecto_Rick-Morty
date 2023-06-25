@@ -6,17 +6,18 @@ export default function Header() {
     return (
         <BrowserRouter>
             <header>
-                <nav>
-                    <ul>
+                <nav className='container'>
+                    <ul className=''>
                         <li>
-                            <Link to="/" className='text-white fs-3'>Home</Link>
+                            <Link to="/" className='text-decoration-none fs-1 sombra'>Home</Link>
+                        </li>
+                        <li>
                         </li>
                     </ul>
                 </nav>
             </header>
             <Routes>
                 <Route path='/' element={<Home />} />
-
             </Routes>
         </BrowserRouter>
     )
