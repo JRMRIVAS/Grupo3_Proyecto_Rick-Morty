@@ -17,7 +17,7 @@ export default function Footer() {
                     </div>
                     <div className='col-md-4 align-self-center'>
                         <ul className=''>
-                            <li>        INICIO</li>
+                            <li>INICIO</li>
                             <li>PERSONAJES</li>
                             <li>CREADORES</li>
                         </ul>
