@@ -4,11 +4,12 @@ import craneo from '../assets/img/craneo.png'
 import amor from '../assets/img/amor.png'
 import pregunta from '../assets/img/pregunta.png'
 
+  
 
 export default function BusquedasEd() {
     //asignando 2 estados
     //un estado para todos los personajes y otro estado para un personaje en especifico por su nombre
-
+ 
     const [personajes, setPersonajes] = useState([]);
     const [name, setName] = useState("");
     const [state, setState] = useState("");

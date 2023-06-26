@@ -67,8 +67,8 @@ export default function Personajes() {
                           
                     <div className='col-lg-3 col-md-6 col-sm-12 my-4' key={indice}>
                         <div className="card">
-                              <img src={character.image} className="img-fluid" alt="character"/>    
-                                                  
+                              <img src={character.image} className="img-fluid im-card" alt="character"/>    
+                                             
                             <div className="detaill">
                                   <h5>{character.name}</h5>
                                   <p>Id: {character.id}</p> 
