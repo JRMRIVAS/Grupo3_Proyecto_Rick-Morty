@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Roboto:wght@100;300&display=swap');
+
+body{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(69,30,87,1) 100%);
+}
+
+#profile{
+    width: 20vw;
+    height: fit-content;
+}
+
+.userIcon{
+    border-radius: 50%;
+}
+
+.card{
+    width: 20vw;
+    height: fit-content;
+}
+
+.userInfo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.userImage{
+    width: 12vw;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: -1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-danger{
+    background-color: rgba(69,30,87,1);
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-danger:hover{
+    background-color: rgb(55, 24, 69);
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
