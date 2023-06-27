@@ -23,7 +23,7 @@ export default function Header() {
                                     <Link to="/" className='text-decoration-none fs-1 sombra nav-link'>Desarrolladores</Link>
                                 </li>
                                 <li>
-                                    {/**<Profile />*/}
+                                    <Profile />
                                 </li>
                             </ul>
                         </div>
