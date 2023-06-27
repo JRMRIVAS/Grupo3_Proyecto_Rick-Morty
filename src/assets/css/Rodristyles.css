@@ -28,7 +28,7 @@
 }
 
 .diapositivas{
-        max-width: 60%; /* ajusta el ancho máximo */
+        max-width: 70%; /* ajusta el ancho máximo */
         max-height: 30%; /* ajusta la altura máxima */
         margin: 0 auto; /* centra el carrusel horizontalmente */
 }
@@ -49,8 +49,15 @@
 
 }
 
+@media (max-width: 576px) {
+    .videos {
+        max-width: 50%;
+        height: auto;
+        }
+}
+
+
 .buscador{
-    width: 40%;
     filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
     transition: 0.2s;
 }
@@ -60,13 +67,9 @@
 
 }
 /**** Header ****/
-ul{
-    list-style: none;
-}
 
 .sombra{
     color: rgb(65, 222, 222);
-    text-decoration: none;
     text-shadow:  0 0 10px #fff;
 }
 
@@ -90,4 +93,10 @@ ul{
 .carita{
     width: 35%;
 
+}
+
+@media (max-width: 576px) {
+    .rotacion {
+        transform: rotate(90deg);
+    }
 }

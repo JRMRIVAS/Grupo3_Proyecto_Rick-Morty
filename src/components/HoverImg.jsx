@@ -15,7 +15,7 @@ export default function HoverImg() {
 
     return (
         <div >
-            <img src={fusion2} className='buscador mx-auto drop' alt="imgBuscador"  onMouseEnter={cursorEncima} onMouseLeave={cursorFuera}/>
+            <img src={fusion2} className='buscador mx-auto drop img-fluid ' alt="imgBuscador"  onMouseEnter={cursorEncima} onMouseLeave={cursorFuera}/>
             {hoverImg && <audio src={portalgun} autoPlay  />}
         </div>
     );
