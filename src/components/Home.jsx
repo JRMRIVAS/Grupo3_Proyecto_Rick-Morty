@@ -6,7 +6,6 @@ import op4 from '../assets/img/op4.jpg'
 import video1 from '../assets/video/rickvideo1.mp4'
 import video3 from '../assets/video/rickvideo3.mp4'
 import video2 from '../assets/video/rickvideo2.mp4'
-import fusion2 from '../assets/img/fusion2.png'
 import {Link} from 'react-router-dom' 
 import HoverImg from './HoverImg'
 
