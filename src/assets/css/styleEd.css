@@ -22,7 +22,7 @@ select {
     justify-items: center;
     margin: 3rem auto;
 }
-.card{
+.card-per{
     position: relative;
     height: 300px;
     width: 100%;

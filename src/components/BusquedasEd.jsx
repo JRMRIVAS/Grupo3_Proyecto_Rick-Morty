@@ -57,13 +57,14 @@ export default function BusquedasEd() {
     console.log(personajes)
     return (
         <div className='hero'>
-            <div className='contenedor row'>
+            <div className='contenedor row'>                
                 <h1 className='text-center my-5'>Encuentra a tu personaje favorito!</h1>
+                
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="" className='text-warning'>Ingresa el nombre del personaje</label>
                     <input type="text" className='form-control' onChange={handleName}/>
                     <button className='btn btn-primary mt-3' type='submit'>Ver Personaje</button>
-                    <h2 className='text-center'>Puedes tambien usar los filtros</h2>
+                    <h2 className='text-center'>Puedes tambien usar los filtros</h2>                    
                     <div className='my-3 gap-5 d-flex justify-content-center'>                   
                         <select onChange={filterState} name="" id="">
                             <option value="" selected disabled>Seleccione Estado</option>
@@ -71,6 +72,7 @@ export default function BusquedasEd() {
                             <option id='dead' value='dead'>Muerto</option>
                             <option id='unknown' value='unknown'>Desconocido</option>
                         </select>
+                       
                         <select onChange={filterSpecie} name="" id="">
                         <option value="" selected disabled>Seleccione Especie</option>
                             <option id='human' value='human'>Humano</option>
@@ -82,12 +84,14 @@ export default function BusquedasEd() {
                             <option id='male' value='male'>Masculino</option>
                             <option id='female' value='female'>Femenino</option>
                         </select>
-                    </div>
+                    </div>  
+                                     
                     <div className='tip text-center my-4'>
                     <h3>Consejo 1: recarga la pagina en cada busqueda</h3>
                     <h3>Consejo 2: si no aparece nada es porque no hay resultados con esas especificaciones</h3>
                     </div>
-                </form>
+                </form>  
+                               
                 <br />
                  {/* apartado del contenido de cada personaje*/}
 
@@ -103,7 +107,7 @@ export default function BusquedasEd() {
                                 personajes.map((personaje, indice) => {
                                     return(
                                         <div className='col-lg-3 col-md-6 col-sm-12 my-4' key={indice}>
-                                                <div className="card">
+                                                <div className="card-per">
                                                     <img src={personaje.image} className="img-fluid imgbusqueda" alt="character" />
 
                                                     <div className="detaill">

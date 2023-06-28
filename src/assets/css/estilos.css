@@ -61,16 +61,17 @@ h1{
     -webkit-text-stroke: 5px rgba(129, 242, 125, 0.502);
     margin-top: 30px;  
 }
-.card{
+.card-per{
     position: relative;
     height: 300px;
-    width: 100%;
+    width: 260px;
     margin: 50px;
     box-shadow: 5px 5px 25px #81f27d80;
     border-style:solid;    
     border-width: 10px;
     border-color:  rgba(130, 242, 126, 0.5);
     overflow: hidden;
+   
 }
 .im-card{
     height: 290px;
@@ -79,7 +80,7 @@ h1{
 }
 .detaill {
     height: 50px;
-    width: 100%;
+    width: 260px;
     padding: 7px;
     box-sizing: border-box;
     position: absolute; 
@@ -103,19 +104,19 @@ h5{
     text-align: justify;
     opacity: 1;    
 }
-.card:hover{
+.card-per:hover{
     cursor: pointer;
 }
-.card:hover .detaill{
+.card-per:hover .detaill{
     height: 240px;
     bottom: 3px;
     background: black;
 }
-.card:hover p{
+.card-per:hover p{
    opacity: 1;
    visibility: visible;
 }
-.card:hover .img{
+.card-per:hover .img{
    transform: scale(1.1); rotate: (-3deg);
  }
 .estatus{
@@ -133,17 +134,17 @@ h5{
 
 /** Media Query */
  @media (max-width: 768px) {
-    .card{
+    .card-per{
         margin: auto;
     }
     .detaill {
         bottom: 1px;         
     }
-    .card:hover .detaill{
+    .card-per:hover .detaill{
         bottom: 1px;        
     }
     .estatus{
-        margin-left: 20px;
+        margin-left: 90px;
         margin-top: -280px;
     }
 }
