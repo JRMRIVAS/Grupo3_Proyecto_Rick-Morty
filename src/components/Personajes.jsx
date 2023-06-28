@@ -61,7 +61,7 @@ export default function Personajes() {
    
     <div className='container'>    
         <h1>Rick y Morty Api</h1> 
-       
+        <NavPage page={page} setPage={setPage} />
             <div className='row my-5'>
               {
                   character.map((character, indice) => {
