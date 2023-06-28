@@ -17,13 +17,16 @@ export default function Header() {
                                     <Link to="/" className='text-decoration-none fs-1 sombra nav-link'>Inicio</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/" className='text-decoration-none fs-1 sombra nav-link'>Personajes</Link>
+                                    <Link to="/personajes" className='text-decoration-none fs-1 sombra nav-link'>Personajes</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/" className='text-decoration-none fs-1 sombra nav-link'>Desarrolladores</Link>
                                 </li>
                                 <li>
-                                    <Profile />
+                                    <Link to="/busqueda" className='text-decoration-none fs-1 sombra nav-link'>Busqueda</Link>
+                                </li>
+                                <li>
+                                    {/**<Profile />*/}
                                 </li>
                             </ul>
                         </div>
@@ -32,6 +35,9 @@ export default function Header() {
             </header>
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/personajes' element={<Personajes />}/>    
+                <Route path='/busqueda' element={<BusquedasEd />}/>          
+
             </Routes>
         </BrowserRouter>
     )
