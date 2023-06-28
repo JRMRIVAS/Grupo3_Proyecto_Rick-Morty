@@ -39,9 +39,6 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className=' text-center px-4'>
-                <h1 className='titulo'>NOTICIAS</h1>
-            </div>
 
             <div className='row gap-5 align-items-center justify-content-center text-center text-sm-left'>
                 <div className='col-md-2 ' >

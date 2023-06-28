@@ -1,6 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './Home'
+import BusquedasEd from './BusquedasEd'
+import Profile from './Profile'
+import Creadores from './Creadores'
 
 export default function Header() {
     return (
@@ -16,17 +19,14 @@ export default function Header() {
                                 <li className="nav-item">
                                     <Link to="/" className='text-decoration-none fs-1 sombra nav-link'>Inicio</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/personajes" className='text-decoration-none fs-1 sombra nav-link'>Personajes</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link to="/" className='text-decoration-none fs-1 sombra nav-link'>Desarrolladores</Link>
-                                </li>
                                 <li>
                                     <Link to="/busqueda" className='text-decoration-none fs-1 sombra nav-link'>Busqueda</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link to="/creadores" className='text-decoration-none fs-1 sombra nav-link'>Desarrolladores</Link>
+                                </li>
                                 <li>
-                                    {/**<Profile />*/}
+                                    <Profile />
                                 </li>
                             </ul>
                         </div>
@@ -35,8 +35,8 @@ export default function Header() {
             </header>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/personajes' element={<Personajes />}/>    
                 <Route path='/busqueda' element={<BusquedasEd />}/>          
+                <Route path='/creadores' element={<Creadores />}/>          
 
             </Routes>
         </BrowserRouter>

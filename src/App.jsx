@@ -3,13 +3,12 @@ import { useAuth0 } from '@auth0/auth0-react'
 import Landing from './components/Landing.jsx'
 import Profile from './components/Profile.jsx'
 
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 import './assets/css/estilos.css'
-import './assets/css/style.css'
-import './assets/css/Lstyle.css'
+import './assets/css/Lstyles.css'
 import './assets/css/Profile.css'
-import './assets/css/rodristyle.css'
+import './assets/css/rodristyles.css'
 import './assets/css/styleEd.css'
 function App() {
   console.log(window.location.origin);
@@ -21,7 +20,7 @@ function App() {
         isAuthenticated ? (
           <> 
             <Header />
-            <Footer />
+            {/**<Footer />*/}
           </>
         ) : (
           <Landing />
