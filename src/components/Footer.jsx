@@ -2,7 +2,7 @@ import React from 'react'
 import loguito from '../assets/img/loguito_cortado.jpg'
 import portal2 from '../assets/img/portal3.gif'
 import HoverAudio from './ControlAudio'
-import './assets/css/rodristyles.css'
+import '../assets/css/rodristyles.css'
 
 
 

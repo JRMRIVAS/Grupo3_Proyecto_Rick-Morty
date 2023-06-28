@@ -4,7 +4,7 @@ import Home from './Home'
 import BusquedasEd from './BusquedasEd'
 import Profile from './Profile'
 import Creadores from './Creadores'
-import './assets/css/rodristyles.css'
+import '../assets/css/rodristyles.css'
 
 
 export default function Header() {
