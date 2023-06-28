@@ -5,7 +5,12 @@ import Profile from './components/Profile.jsx'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import './assets/css/estilos.css'
 import './assets/css/style.css'
+import './assets/css/Lstyle.css'
+import './assets/css/Profile.css'
+import './assets/css/rodristyle.css'
+import './assets/css/styleEd.css'
 function App() {
   console.log(window.location.origin);
 
