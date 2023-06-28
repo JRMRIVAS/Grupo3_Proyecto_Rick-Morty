@@ -8,7 +8,6 @@ import Footer from './components/Footer.jsx'
 import './assets/css/estilos.css'
 import './assets/css/Lstyles.css'
 import './assets/css/Profile.css'
-import './assets/css/rodristyles.css'
 import './assets/css/styleEd.css'
 function App() {
   console.log(window.location.origin);
