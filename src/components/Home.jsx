@@ -39,10 +39,6 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className=' text-center px-4'>
-                <h1 className='titulo'>NOTICIAS</h1>
-            </div>
-
             <div className='row gap-5 align-items-center justify-content-center text-center text-sm-left'>
                 <div className='col-md-2 ' >
                     <video src={video2} className='videos  ' controls></video>
@@ -56,7 +52,7 @@ export default function Home() {
             </div >
             <div className='row '>
                 <div className='col-md-4 text-center '>
-                        <HoverImg />
+                    <HoverImg />
                 </div>
             </div>
         </main>
