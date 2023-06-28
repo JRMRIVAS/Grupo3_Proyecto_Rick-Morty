@@ -9,6 +9,7 @@ import './assets/css/estilos.css'
 import './assets/css/Lstyles.css'
 import './assets/css/Profile.css'
 import './assets/css/styleEd.css'
+import './assets/css/rodristyles.css'
 function App() {
   console.log(window.location.origin);
 
@@ -17,7 +18,7 @@ function App() {
       <>
       {
         isAuthenticated ? (
-          <> 
+          <>
             <Header />
             <Footer />
           </>

@@ -5,6 +5,8 @@ import amor from '../assets/img/amor.png'
 import pregunta from '../assets/img/pregunta.png'
 import aright from '../assets/img/aright.png'
 import aleft from '../assets/img/aleft.png'
+import '../assets/css/estilos.css'
+
 
 function NavPage({ page, setPage }) {
   return (
