@@ -18,6 +18,7 @@
     animation-timing-function: linear;
     animation-duration: 30s;
     animation-iteration-count: infinite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1{
