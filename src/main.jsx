@@ -4,6 +4,6 @@ import Approdri from './Approdri.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Approdri />
   </React.StrictMode>,
 )

@@ -2,7 +2,7 @@ import React from 'react'
 import loguito from '../assets/img/loguito_cortado.jpg'
 import portal2 from '../assets/img/portal3.gif'
 import HoverAudio from './ControlAudio'
-
+import {Link}  from 'react-router-dom'
 
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
                     </div>
                     <div className='col-md-3 align-self-center  '>
                         <ul className='list-unstyled' >
-                            <li className='minimenu '>INICIO</li>
+                            <li className='minimenu'>PERSONAJES</li>
                             <li className='minimenu'>PERSONAJES</li>
                             <li className='minimenu'>CREADORES</li>
                         </ul>

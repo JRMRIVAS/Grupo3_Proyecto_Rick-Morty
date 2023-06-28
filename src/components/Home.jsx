@@ -54,10 +54,11 @@ export default function Home() {
                     <video src={video3} className='videos' controls></video>
                 </div>
             </div >
-
-                <Link to="/" className='col-md-4 ' >
-                    <HoverImg />
-                </Link>
+            <div className='row '>
+                <div className='col-md-4 text-center '>
+                        <HoverImg />
+                </div>
+            </div>
         </main>
         </>
     )
