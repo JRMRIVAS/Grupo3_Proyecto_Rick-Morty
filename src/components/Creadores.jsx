@@ -4,9 +4,10 @@ import './../assets/css/Lstyles.css'
 
 
 
+
 export default function Creadores() {
   return (
-    <>
+    
     <main className='Principal'>
         <section className='container pt-5'>
         <div className='row justify-content-center d-flex'>
@@ -32,7 +33,7 @@ export default function Creadores() {
                     </div>
                 </div>
             </div>
-        </div>
+         </div>
         </section>
         <section className='container'>
         <div className='row justify-content-center d-flex'>
@@ -58,7 +59,7 @@ export default function Creadores() {
                     </div>
                 </div>
             </div>
-        </div>
+         </div>
         </section>
         <section className='container'>
         <div className='row justify-content-center d-flex'>
@@ -68,16 +69,14 @@ export default function Creadores() {
                     <div className='card-body mb-3'>
                       <h5 className='card-title text-center'>Eduardo Gomez</h5>
                       <p className='card-text'>Desarrollador web</p>
-                      <p className='mb-0'><i className='bi bi-envelope'></i> correo@gmail.com</p>
+                      <p className='mb-0'><i className='bi bi-envelope'></i> eduardogomez.sent2@gmail.com</p>
                       <a className='link-light text-decoration-none' target="_blank" href='https://github.com/Eduardosent'><i class="bi bi-github"></i> github.com/Eduardosent</a>
                     </div>
                 </div>
             </div>
-
-        </div>
+         </div>
         </section>
-        </main>
-    </>  
+        </main> 
   )
 
 }

@@ -18,7 +18,7 @@
     animation-timing-function: linear;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1{
@@ -44,6 +44,7 @@ p{
     min-width: 0;
     word-wrap: break-word;
     
+
       
 }
 
