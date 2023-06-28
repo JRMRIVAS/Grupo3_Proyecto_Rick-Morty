@@ -18,7 +18,9 @@ export default function Footer() {
                     </div>
                     <div className='col-md-3 align-self-center  '>
                         <ul className='list-unstyled' >
-                            <li className='minimenu'>PERSONAJES</li>
+                            <li className='minimenu'>
+                                <Link to="/">Inicio</Link>
+                            </li>
                             <li className='minimenu'>PERSONAJES</li>
                             <li className='minimenu'>CREADORES</li>
                         </ul>
