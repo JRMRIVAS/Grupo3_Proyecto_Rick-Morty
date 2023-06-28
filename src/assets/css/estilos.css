@@ -30,7 +30,7 @@ nav ul li {
     color: white;
 }
 /** Apartado de Personajes */
-body{
+/**body{
       background-image: url('../img/backsito.png');
       background-position: top center;
       background-attachment: fixed;      
@@ -50,7 +50,7 @@ body{
         animation-timing-function: linear;
         animation-duration: 30s;
         animation-iteration-count: infinite;       
-    }
+    }*/
 h1{
     width: 100%;
     text-align: center;

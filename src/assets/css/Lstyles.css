@@ -1,4 +1,4 @@
-.Principal{
+/**.Principal{
     background-image: url('../img/backsito.png');
     background-position: top center;
     background-attachment: fixed;
@@ -18,7 +18,7 @@
     animation-timing-function: linear;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-}
+}*/
 
 h1{
     
