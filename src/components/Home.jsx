@@ -8,6 +8,8 @@ import video3 from '../assets/video/rickvideo3.mp4'
 import video2 from '../assets/video/rickvideo2.mp4'
 import {Link} from 'react-router-dom' 
 import HoverImg from './HoverImg'
+import '../assets/css/rodristyles.css'
+
 
 export default function Home() {
     return (

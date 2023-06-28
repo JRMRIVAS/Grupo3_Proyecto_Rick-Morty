@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import craneo from '../assets/img/craneo.png'
 import amor from '../assets/img/amor.png'
 import pregunta from '../assets/img/pregunta.png'
+import '../assets/css/styleEd.css'
+
+
 
   
 
