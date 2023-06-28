@@ -20,7 +20,7 @@ function App() {
         isAuthenticated ? (
           <> 
             <Header />
-            {/**<Footer />*/}
+            <Footer />
           </>
         ) : (
           <Landing />
