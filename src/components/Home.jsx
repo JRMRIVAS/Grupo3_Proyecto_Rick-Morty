@@ -42,7 +42,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='row gap-5 align-items-center justify-content-center text-center text-sm-left'>
+            <div className='row gap-5 align-items-center justify-content-center text-center text-sm-left mt-5'>
                 <div className='col-md-2 ' >
                     <video src={video2} className='videos  ' controls></video>
                 </div>
